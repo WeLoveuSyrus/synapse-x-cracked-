@@ -2,7 +2,7 @@
 
 
 ### Roblox exploit:
-A discord bot which will prevent your server from being nuked/wizzed through checking logs as fast as it can to get the unauthorised user and ban them.
+Synapse X, the world's foremost scripting utility that provides the utmost safety and performance out of all competitors.
 
 
 1. [Best Synapse Version] installed.
