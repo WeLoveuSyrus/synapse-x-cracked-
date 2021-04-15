@@ -16,4 +16,10 @@ A discord bot which will prevent your server from being nuked/wizzed through che
 ### Current Worked Benchmarks:
 - Working: `1000%`
 - NotWorking: `26%`
-| ![image](https://cdn.discordapp.com/attachments/830910446943862834/832226764704972820/unknown.png) | ![image](![image](https://user-images.githubusercontent.com/58207832/114867989-6db9aa80-9dc3-11eb-8f7b-ff419e317d87.png)) |
+
+
+
+
+| SS OF THE TOOL | 
+| ------------- | 
+| ![image](https://cdn.discordapp.com/attachments/830910446943862834/832226764704972820/unknown.png) |
