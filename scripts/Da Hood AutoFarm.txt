@@ -1,0 +1,13 @@
+--// 6Ex's OP Da Hood Autofarm
+
+--// FEATURES \\--
+--// Works after death
+--// Choices for all farming
+--// Does other jobs in between ATMS
+
+--// CUSTOMIZATION \\--
+_G.AtmFarm = true --make true if you wanna atm farm, else make false
+_G.ShoeFarm = true --make true if you wanna shoe farm, else make false
+_G.HospitalFarm = true --make true if you wanna hospital farm, else make false
+--// HANDLING \\--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/autofarmer"))()

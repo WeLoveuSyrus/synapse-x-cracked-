@@ -1,0 +1,4 @@
+ while wait() do
+local Event = game:GetService("Workspace").Events.GiveCash
+Event:FireServer()
+end

@@ -1,0 +1,4 @@
+-Update Log
+-EasyExploits API FIXED
+-New Working Scripts
+

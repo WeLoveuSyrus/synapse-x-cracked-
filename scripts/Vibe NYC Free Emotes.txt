@@ -1,0 +1,213 @@
+local gui2 = game.Players.LocalPlayer.PlayerGui.Main.Animations
+gui2.Position = UDim2.new(0.17,0,0.5,0)
+gui2.AnchorPoint = Vector2.new(0.5,0.5)
+local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
+gui.Name = "Music"
+gui.ResetOnSpawn = false
+local toggle = Instance.new("TextButton",gui)
+toggle.Text = "Toggle Emote GUI"
+toggle.TextScaled = true
+toggle.AnchorPoint = Vector2.new(0.5,0)
+toggle.Size = UDim2.new(0,100,0,35,0)
+toggle.Position = UDim2.new(0.5,0,0,0)
+toggle.BorderSizePixel = 2
+toggle.BorderColor3 = Color3.fromRGB(234,0,251)
+toggle.TextColor3 = Color3.fromRGB(255,255,255)
+toggle.Font = "GothamBold"
+toggle.BackgroundColor3 = Color3.fromRGB(27, 32, 43)
+local texty = Instance.new("TextLabel",toggle)
+texty.Text = "made by ct :)" -- pls dont remove the credit its just an emote script :)
+texty.TextColor3 = Color3.fromRGB(255,255,255)
+texty.Font = "GothamBold"
+texty.Position = UDim2.new(0.5,0,1.25,0)
+texty.TextSize = 14
+
+toggle.MouseButton1Click:Connect(function()
+  if gui2.Visible == true then
+      gui2.Visible = false
+  else
+      gui2.Visible = true
+  end
+end)
+
+local l__Animations__1 = game.Players.LocalPlayer.PlayerGui.Main.Animations;
+local v2 = { { "Backflip", 5453753605 }, { "Sit 1", 5463345195 }, { "Sit 2", 5463519329 }, { "Sit 3", 5463787770 }, { "Sit 4", 5463863158 }, { "Lay Down", 5463751281 }, { "Angry", 6416354550 }, { "Waving", 6416362575 }, { "Stunned", 6416370462 } };
+local l__MarketplaceService__1 = game:GetService("MarketplaceService");
+local l__Players__2 = game:GetService("Players");
+local u3 = { 10944572, 16050677 };
+local l__TextButton__4 = l__Animations__1.EmoteFrame.Container.TextButton;
+local u5 = 1;
+local l__Slow__6 = l__Animations__1.EmoteFrame.Container.Slow;
+local l__Regular__7 = l__Animations__1.EmoteFrame.Container.Regular;
+local l__Fast__8 = l__Animations__1.EmoteFrame.Container.Fast;
+local u9 = nil;
+local u10 = { { "Backflip", 5453753605 }, { "Sit 1", 5463345195 }, { "Sit 2", 5463519329 }, { "Sit 3", 5463787770 }, { "Sit 4", 5463863158 }, { "Lay Down", 5463751281 }, { "Angry", 6416354550 }, { "Waving", 6416362575 }, { "Stunned", 6416370462 }, { "4EVER", 6117589534 }, { "Bobbin", 6117582573 }, { "Moonwalk", 6117562177 }, { "Orange Justice", 6117556790 }, { "Nae Nae", 5985253790 }, { "The Woo", 5985251247 }, { "Complex", 5939854345 }, { "Fright", 5939842389 }, { "Uppy", 5939845895 }, { "Planetary", 5939832489 }, { "Running Man", 5939831197 }, { "Bolly", 5939821107 }, { "Never Gonna", 5939815880 }, { "Renegade", 5939812188 }, { "Toosie Slide", 5939805053 }, { "Pumped Up", 5939805053 }, { "Boogie", 5939798309 }, { "Dynamic", 5939794130 }, { "Hype", 5939793211 }, { "Poplock", 5939791615 }, { "Glow", 5939789259 }, { "Electro Swing", 5939777659 }, { "Diamond", 5917006064 }, { "Cradles", 5917005010 }, { "Verve", 5917003769 }, { "Lavish", 5914306440 }, { "Billy Bounce", 5914305064 }, { "Dream Feet", 5914304455 }, { "Pump It Up", 5914304028 }, { "Say So", 5914303584 }, { "Weeknd", 5914302454 }, { "Stride", 5914301583 }, { "Rollie", 5914300344 }, { "Knee Bounce", 5459009710 }, { "Step Dance", 5457202954 }, { "Kick Shuffle", 5453745558 }, { "Billy Bounce", 5453646620 }, { "Poki", 5453620000 }, { "The Box", 5453610659 }, { "Around Town", 6510862049 }, { "BBoy", 6510865999 }, { "Bestmates", 6510870066 }, { "Break Dance", 6510873373 }, { "Break Dance 2", 6510876297 }, { "Breakdown", 6510877229 }, { "Can Can", 6510881310 }, { "Chicken Dance", 6510882898 }, { "Crackdown", 6510884689 }, { "Default", 6510900430 }, { "Diamond", 6510902927 }, { "Freeflow", 6510909078 }, { "Gangnam Style", 6510912807 }, { "Hand Spin", 6510914548 }, { "Hotline Bling", 6510917073 }, { "House", 6510919420 }, { "Jaywalk", 6510922060 }, { "Macarena", 6510933225 }, { "No Touch", 6510936019 }, { "OG Twist", 6510938080 }, { "Pennywise", 6510939693 }, { "Pumpernickle", 6510944128 }, { "Salsa", 6510947625 }, { "Samba", 6510949367 }, { "Shoot", 6510952275 }, { "Shuffle", 6510954117 }, { "Shuffle 2", 6510955456 }, { "Shuffle 3", 6510956964 }, { "Smooth Moves", 6510959070 }, { "YMCA", 6510961334 } };
+local l__Template__11 = l__Animations__1.EmoteFrame.Container.Template;
+local u12 = { { "Backflip", 5453753605 }, { "Sit 1", 5463345195 }, { "Sit 2", 5463519329 }, { "Sit 3", 5463787770 }, { "Sit 4", 5463863158 }, { "Lay Down", 5463751281 }, { "Angry", 6416354550 }, { "Waving", 6416362575 }, { "Stunned", 6416370462 }, { "Zany", 6549875047 }, { "Poplock", 6549880990 }, { "Work It Out", 6549886723 }, { "Twirl", 6549889228 }, { "Thriller", 6549891503 }, { "Switchstep", 6549895496 }, { "Scenario", 6549901924 }, { "Signature Shuffle", 6549904342 }, { "Salsa 2", 6549907730 }, { "Rumba", 6549909788 }, { "Wavy", 6549875047 }, { "Robot", 6549915393 }, { "Reboot", 6549917157 }, { "NS Dance", 6549919734 }, { "Leapin", 6549927594 }, { "Kickin", 6549929086 }, { "Justice", 6549930653 }, { "Left Right", 6549933181 }, { "Headspin 2", 6549936025 }, { "Gothic", 6549939917 }, { "Funky", 6549942647 }, { "Footwork", 6549945177 }, { "Reanimated", 6549948347 }, { "Hyper", 6549952899 }, { "Conga", 6549955251 }, { "Idle Shuffle", 6549957753 }, { "Kick Out", 6549962090 }, { "Breakdance Twist", 6549964326 }, { "Jabba", 6549968141 }, { "Flapper'", 6549973567 }, { "Reel it in", 6549979882 }, { "Ah Oh Ay", 6549983277 }, { "Cheer", 6549986204 }, { "Wanna See Me", 6549988981 }, { "Wiggle", 6549991284 }, { "Gangnam Style 2", 6549997974 }, { "American Boy", 6550001206 }, { "Smeeze", 6550007829 }, { "Raise The Roof", 6550014465 }, { "Street Shuffle", 6550018724 }, { "Anthony Shuffle", 6550023479 }, { "Outwest", 6550029828 }, { "Flossin", 6550032949 }, { "Dont Start Now", 6550047848 } };
+local u13 = nil;
+
+l__TextButton__4.Position = UDim2.new(1.18,0,0.04,0)
+l__Animations__1.EmoteFrame.Container.Dances.Position = UDim2.new(1.5,0,0.5,0)
+l__Animations__1.EmoteFrame.Container.Dances2.Position = UDim2.new(1.5,0,0.5,0)
+l__TextButton__4.Visible = true;
+l__TextButton__4.Text = "ANIMATION PACK 1";
+l__Animations__1.EmoteFrame.Container.Dances.Visible = true;
+l__TextButton__4.MouseButton1Click:Connect(function()
+   if l__Animations__1.EmoteFrame.Container.Dances.Visible == false then
+       l__Animations__1.EmoteFrame.Container.Dances.Visible = true;
+       l__Animations__1.EmoteFrame.Container.Dances2.Visible = false;
+       l__TextButton__4.Text = "ANIMATION PACK 1";
+   else
+l__Animations__1.EmoteFrame.Container.Dances.Visible = false;
+l__Animations__1.EmoteFrame.Container.Dances2.Visible = true;
+   l__TextButton__4.Text = "ANIMATION PACK 2";
+   end
+end);
+
+for v6, v7 in ipairs(u10) do
+local v8 = l__Template__11:Clone();
+v8.PressButton.ID.Value = v7[2];
+v8.Name = v7[1];
+v8.PressButton.TextLabel.Text = v7[1];
+v8.Parent = l__Animations__1.EmoteFrame.Container.Dances;
+v8.Visible = true;
+end;
+for v9, v10 in ipairs(u12) do
+local v11 = l__Template__11:Clone();
+v11.PressButton.ID.Value = v10[2];
+v11.Name = v10[1];
+v11.PressButton.TextLabel.Text = v10[1];
+v11.Parent = l__Animations__1.EmoteFrame.Container.Dances2;
+v11.Visible = true;
+end;
+for v12, v13 in pairs(l__Animations__1.EmoteFrame.Container.Dances:GetDescendants()) do
+if v13:IsA("TextButton") and v13.Name == "PressButton" then
+v13.MouseButton1Click:Connect(function()
+--if l__MarketplaceService__1:UserOwnsGamePassAsync(l__Players__2.LocalPlayer.UserId, u3[1]) and l__Players__2.LocalPlayer.Character and l__Players__2.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if not gui:FindFirstChild("Animation") then
+if u13 then
+local v14 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v14 > 0 then
+for v15, v16 in pairs(v14) do
+if v16.Animation.AnimationId == "rbxassetid://" .. u13 then
+v16:Stop();
+end;
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+local v17 = Instance.new("Animation", gui);
+v17.AnimationId = "rbxassetid://" .. tostring(v13.ID.Value);
+local v18 = l__Players__2.LocalPlayer.Character.Humanoid:LoadAnimation(v17);
+v18:Play();
+v18:AdjustSpeed(1);
+u13 = v13.ID.Value;
+u9 = v18;
+return;
+end;
+if gui.Animation.AnimationId ~= "rbxassetid://" .. tostring(v13.ID.Value) then
+if u13 then
+local v19 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v19 > 0 then
+for v20, v21 in pairs(v19) do
+if v21.Animation.AnimationId == "rbxassetid://" .. u13 then
+v21:Stop();
+end;
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+local l__Animation__22 = gui.Animation;
+l__Animation__22.AnimationId = "rbxassetid://" .. tostring(v13.ID.Value);
+local v23 = l__Players__2.LocalPlayer.Character.Humanoid:LoadAnimation(l__Animation__22);
+v23:Play();
+v23:AdjustSpeed(1);
+u13 = v13.ID.Value;
+u9 = v23;
+return;
+elseif u13 then
+local v24 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v24 > 0 then
+for v25, v26 in pairs(v24) do
+if v26.Animation.AnimationId == "rbxassetid://" .. u13 then
+v26:Stop();
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+gui.Animation:Destroy();
+end;
+--end;
+end);
+end;
+end;
+for v27, v28 in pairs(l__Animations__1.EmoteFrame.Container.Dances2:GetDescendants()) do
+if v28:IsA("TextButton") and v28.Name == "PressButton" then
+v28.MouseButton1Click:Connect(function()
+--if l__MarketplaceService__1:UserOwnsGamePassAsync(l__Players__2.LocalPlayer.UserId, u3[2]) and l__Players__2.LocalPlayer.Character and l__Players__2.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if not gui:FindFirstChild("Animation") then
+if u13 then
+local v29 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v29 > 0 then
+for v30, v31 in pairs(v29) do
+if v31.Animation.AnimationId == "rbxassetid://" .. u13 then
+v31:Stop();
+end;
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+local v32 = Instance.new("Animation", gui);
+v32.AnimationId = "rbxassetid://" .. tostring(v28.ID.Value);
+local v33 = l__Players__2.LocalPlayer.Character.Humanoid:LoadAnimation(v32);
+v33:Play();
+v33:AdjustSpeed(1);
+u13 = v28.ID.Value;
+u9 = v33;
+return;
+end;
+if gui.Animation.AnimationId ~= "rbxassetid://" .. tostring(v28.ID.Value) then
+if u13 then
+local v34 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v34 > 0 then
+for v35, v36 in pairs(v34) do
+if v36.Animation.AnimationId == "rbxassetid://" .. u13 then
+v36:Stop();
+end;
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+local l__Animation__37 = gui.Animation;
+l__Animation__37.AnimationId = "rbxassetid://" .. tostring(v28.ID.Value);
+local v38 = l__Players__2.LocalPlayer.Character.Humanoid:LoadAnimation(l__Animation__37);
+v38:Play();
+v38:AdjustSpeed(1);
+u13 = v28.ID.Value;
+u9 = v38;
+return;
+elseif u13 then
+local v39 = l__Players__2.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks();
+if #v39 > 0 then
+for v40, v41 in pairs(v39) do
+if v41.Animation.AnimationId == "rbxassetid://" .. u13 then
+v41:Stop();
+end;
+end;
+end;
+u13 = nil;
+u9 = nil;
+gui.Animation:Destroy();
+end;
+--end;
+end);
+end;
+end;
+if not v4 then
+print("robuz lol uch");
+end;

